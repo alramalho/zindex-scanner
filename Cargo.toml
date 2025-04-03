@@ -1,0 +1,23 @@
+[package]
+name = "zindex-scanner"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alex Ramalho <alexandre.ramalho.1998@gmail.com>"]
+description = "A CLI tool to scan and analyze z-index definitions in JavaScript/TypeScript files"
+license = "MIT"
+repository = "https://github.com/alramalho/zindex-scanner"
+keywords = ["z-index", "css", "scanner", "cli", "javascript", "typescript"]
+categories = ["development-tools", "text-processing"]
+readme = "README.md"
+
+[[bin]]
+name = "zscan"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+walkdir = "2.4"
+regex = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0" 
