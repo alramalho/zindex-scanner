@@ -2,7 +2,7 @@
 
 A CLI tool that finds and displays z-index layers in your JavaScript/TypeScript project, showing which elements appear on top of others.
 
-![Demo](demo.mp4)
+![Demo](demo.gif)
 
 ## Features
 
