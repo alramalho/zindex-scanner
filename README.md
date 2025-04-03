@@ -10,7 +10,7 @@ A CLI tool that finds and displays z-index layers in your JavaScript/TypeScript 
 - Supports multiple z-index formats:
   - Tailwind CSS: `z-[10]`
   - React Native: `zIndex: 10`
-  - CSS: `z-index: 10`
+  - React 'style' prop: `z-index: 10`
 - Sorts z-index values in descending order
 - Excludes hidden directories and `node_modules`
 - Provides a tree-like visualization of z-index hierarchy
