@@ -2,7 +2,21 @@
 
 A CLI tool that finds and displays z-index layers in your JavaScript/TypeScript project, showing which elements appear on top of others.
 
-## Installation
+![Demo](demo.mp4)
+
+## Features
+
+- Scans JavaScript/TypeScript files for z-index definitions
+- Supports multiple z-index formats:
+  - Tailwind CSS: `z-[10]`
+  - React Native: `zIndex: 10`
+  - CSS: `z-index: 10`
+- Sorts z-index values in descending order
+- Excludes hidden directories and `node_modules`
+- Provides a tree-like visualization of z-index hierarchy
+
+
+# Installation
 
 ```bash
 cargo install zindex-scanner
@@ -37,6 +51,7 @@ z-10
   ├─ File: src/components/Header.tsx
   └─ Line: 8
 ```
+
 
 ## Supported File Types
 
