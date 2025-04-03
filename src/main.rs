@@ -25,7 +25,7 @@ fn scan_file(path: &Path) -> Result<Vec<ZIndexEntry>> {
     let content = fs::read_to_string(path)
         .with_context(|| format!("Failed to read file: {}", path.display()))?;
     
-    let z_index_pattern = Regex::new(r"z-\[(\d+)\]|zIndex:\s*(\d+)|z-index:\s*(\d+)")?;
+    let z_index_pattern = Regex::new(r"z-\[(\d+)\]|z-(\d+)|zIndex:\s*(\d+)|z-index:\s*(\d+)")?;
     let mut entries = Vec::new();
     
     for (line_number, line) in content.lines().enumerate() {
